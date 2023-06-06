@@ -66,6 +66,7 @@ main .subtitleRef {
     display: flex;
     margin: 30px;
     margin-top: 60px;
+    flex-direction: row;
 }
 
 .carlSaganImg {
@@ -137,6 +138,10 @@ main .subtitleRef {
     font-size: 18px;
 }
 
+#p2 {
+  margin-top: 30px;
+}
+
 .timeline {
     width: 80%;
     height: auto;
@@ -176,6 +181,54 @@ main .subtitleRef {
     letter-spacing: 2px;
     color: black;
   }
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+footer .wikipedia {
+  color: white;
+  padding: 40px;
+  display: flex;
+}
+
+.wikipedia img {
+  width: 32px;
+  height: 32px;
+}
+
+.wikipedia .wikiIcon {
+  background-color: white;
+  height: 34px;
+  width: 34px;
+  border-radius: 10px;
+  margin-right: 20px;
+
+}
+
+.wikipedia .wikiIcon:hover {
+  scale: 1.1;
+}
+
+footer .copy {
+  color: white;
+  text-align: center;
+  font-size: 13px;
+}
+
+footer a {
+  text-decoration: none;
+  margin-left: 6px;
+}
+
+footer a:hover {
+  color: white;
+  scale:1.1;
+}
+
+
+
   @media only screen and (min-width: 768px) {
     .timeline:before {
       content: "";
@@ -228,6 +281,7 @@ main .subtitleRef {
     .timeline ul li:hover::before {
       background-color: aqua;
     }
+
   }
   
 .timelineview {
@@ -240,4 +294,97 @@ main .subtitleRef {
 
 .timelineview h3 {
     font-size: 40px;
+}
+
+@media (max-width:768px) {
+  main .subtitle {
+    border-bottom: 0;
+  }
+  main h3 {
+    font-size: 16px;
+  }
+
+  #carlSagan {
+    margin: 10px;
+    margin-top: 30px ;
+    margin-bottom: 30px;
+    margin-left: 2px;
+  }
+
+  .carlSaganResume {
+    font-size: 17px;
+  }
+
+  .carlSaganResume2 {
+    font-size: 16px;
+    margin-left: 20px;
+  }
+  .carlSaganImg2 {
+    margin: 0px;
+  }
+  #p2 {
+    margin-top: 15px;
+  }
+  footer .wikipedia {
+    font-size: 14px;
+  }
+  footer a img{
+    margin-left: 0;
+  }
+  .container {
+    width: 89%;
+  }
+}
+
+@media (max-width:426px) {
+  #carlSagan {
+    flex-direction: column;
+    margin: 0px;
+    margin-top: 60px;
+  }
+  header h1 {
+    font-size: 40px;
+  }
+  header {
+    height: 400px;
+  }
+  .carlSaganResume {
+    margin-left: 0px;
+    margin-top: 50px;
+    font-size: 16px;
+    width: 100%;
+  }
+  main h3{
+    font-size: 14px
+  }
+
+  .carlSaganResume2 {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .container {
+    width: 92%;
+  }
+  .timelineview h3 {
+    font-size: 30px;
+  }
+  .timeline-content .date { 
+    color:white
+  }
+  
+  ul {
+    padding: 0px;
+  }
+
+  footer .wikipedia {
+    padding: 0px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    font-size: 13px;
+  }
+  footer a {
+    margin: 0;
+    display: flex;
+  }
+
 }
